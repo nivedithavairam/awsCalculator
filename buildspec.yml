@@ -8,7 +8,6 @@ phases:
     commands:
     - echo "Entered build phase"
     - mvn clean prepare-package war:exploded
-#    - mvn clean package
   post_build:
     commands:
     - echo "Entered the post-build phase"
@@ -16,4 +15,3 @@ phases:
 artifacts:
   files:
     - deploy/**/*
-#    - target/calculator.war
